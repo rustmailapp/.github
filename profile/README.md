@@ -26,12 +26,18 @@
 
 ```sh
 # Install
-cargo install rustmail
+brew install rustmailapp/tap/rustmail
 
 # Run
 rustmail
 
 # Point your app's SMTP at localhost:1025, open localhost:8025
+```
+
+Or with cargo:
+
+```sh
+cargo install rustmail
 ```
 
 Or with Docker:
