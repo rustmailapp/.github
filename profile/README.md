@@ -19,14 +19,14 @@
 |---|---|
 | **[rustmail](https://github.com/rustmailapp/rustmail)** | Core server — SMTP capture, web UI, REST API, CLI |
 | **[rustmail-action](https://github.com/rustmailapp/rustmail-action)** | GitHub Action — start the server and assert on emails in CI |
-| **[rustmail-homebrew](https://github.com/rustmailapp/rustmail-homebrew)** | Homebrew tap — `brew install rustmailapp/tap/rustmail` |
+| **[homebrew-rustmail](https://github.com/rustmailapp/homebrew-rustmail)** | Homebrew tap — `brew install rustmailapp/rustmail/rustmail` |
 | **[rustmail.nvim](https://github.com/rustmailapp/rustmail.nvim)** | Neovim plugin — browse captured emails without leaving the editor |
 
 ### Quick start
 
 ```sh
 # Install
-brew install rustmailapp/tap/rustmail
+brew install rustmailapp/rustmail/rustmail
 
 # Run
 rustmail
@@ -43,9 +43,9 @@ cargo install rustmail
 Or with Docker:
 
 ```sh
-docker run -p 1025:1025 -p 8025:8025 ghcr.io/rustmailapp/rustmail:latest
+docker run -p 1025:1025 -p 8025:8025 -e RUSTMAIL_BIND=0.0.0.0 ghcr.io/rustmailapp/rustmail:latest
 ```
 
 ### Links
 
-<a href="https://rustmail.app">Website</a> · <a href="https://github.com/rustmailapp/rustmail#documentation">Docs</a> · <a href="https://crates.io/crates/rustmail">Crates.io</a>
+<a href="https://rustmail.app">Website</a> · <a href="https://docs.rustmail.app">Docs</a> · <a href="https://crates.io/crates/rustmail">Crates.io</a>
