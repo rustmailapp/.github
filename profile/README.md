@@ -25,21 +25,18 @@
 ### Quick start
 
 ```sh
-# Install
-brew install rustmailapp/rustmail/rustmail
-
-# Run
-rustmail
-
-# Point your app's SMTP at localhost:1025, open localhost:8025
+docker run -p 1025:1025 -p 8025:8025 smyile/rustmail:latest
 ```
 
-Or with Docker:
+Or install with Homebrew:
 
 ```sh
-docker run -p 1025:1025 -p 8025:8025 ghcr.io/rustmailapp/rustmail:latest
+brew install rustmailapp/rustmail/rustmail
+rustmail
 ```
+
+Point your app's SMTP at `localhost:1025`, then open [localhost:8025](http://localhost:8025).
 
 ### Links
 
-<a href="https://rustmail.app">Website</a> · <a href="https://docs.rustmail.app">Docs</a> · <a href="https://github.com/rustmailapp/rustmail/releases">Releases</a>
+<a href="https://rustmail.app">Website</a> · <a href="https://docs.rustmail.app">Docs</a> · <a href="https://hub.docker.com/r/smyile/rustmail">Docker Hub</a> · <a href="https://github.com/rustmailapp/rustmail/releases">Releases</a>
